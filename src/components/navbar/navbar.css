@@ -1,0 +1,169 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  padding: 12px 60px;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.brand-name {
+  color: #222;
+}
+.brand-dot {
+  color: #c05551;
+}
+
+/* Links */
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 36px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  letter-spacing: 0.3px;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.2s;
+}
+
+.navbar-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #c05551;
+  transition: width 0.25s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  color: #c05551;
+}
+
+.navbar-links li a:hover::after,
+.navbar-links li a.active::after {
+  width: 100%;
+}
+
+/* Resume Button */
+.navbar-resume-btn {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 22px;
+  border: 2px solid #c05551;
+  border-radius: 6px;
+  color: #c05551;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.4px;
+}
+
+.navbar-resume-btn:hover {
+  background: #c05551;
+  color: #fff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #222;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Dark mode overrides */
+.dark .navbar.scrolled {
+  background: rgba(30, 30, 30, 0.96);
+}
+.dark .brand-name,
+.dark .navbar-links li a {
+  color: #eee;
+}
+.dark .hamburger span {
+  background: #eee;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 14px 24px;
+  }
+  .navbar.scrolled {
+    padding: 10px 24px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navbar-resume-btn {
+    display: none;
+  }
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-links.open {
+    right: 0;
+  }
+  .navbar-links li a {
+    font-size: 18px;
+  }
+}

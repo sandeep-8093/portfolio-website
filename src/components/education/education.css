@@ -1,0 +1,152 @@
+.edu-section {
+  padding: 80px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.edu-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.edu-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c05551;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.edu-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.edu-underline {
+  width: 50px;
+  height: 3px;
+  background: #c05551;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Timeline */
+.edu-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.edu-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.edu-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 50px;
+}
+
+.edu-icon {
+  width: 48px;
+  height: 48px;
+  background: #fff3f3;
+  border: 2px solid #c05551;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.edu-line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(to bottom, #c05551, #f0c0be);
+  margin: 6px 0;
+}
+
+/* Card */
+.edu-card {
+  flex: 1;
+  padding-bottom: 36px;
+}
+
+.edu-card-inner {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 14px;
+  padding: 24px 28px;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.edu-card-inner:hover {
+  box-shadow: 0 8px 30px rgba(192, 85, 81, 0.1);
+  transform: translateY(-2px);
+}
+
+.edu-grade {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #c05551;
+  background: #fdecea;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.edu-degree {
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+.edu-school {
+  font-size: 13px;
+  font-weight: 600;
+  color: #c05551;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.edu-school:hover { opacity: 0.75; }
+
+.edu-period {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/* Dark mode */
+.dark .edu-title { color: #eee; }
+.dark .edu-card-inner {
+  background: #2a2a2a;
+  border-color: #333;
+}
+.dark .edu-degree { color: #eee; }
+.dark .edu-icon {
+  background: #2d2020;
+  border-color: #e07070;
+}
+.dark .edu-grade {
+  background: #3a2020;
+  color: #e07070;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .edu-section { padding: 60px 20px; }
+  .edu-icon { width: 38px; height: 38px; font-size: 16px; }
+  .edu-degree { font-size: 15px; }
+}

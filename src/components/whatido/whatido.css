@@ -1,0 +1,226 @@
+.wid-section {
+  padding: 90px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.wid-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.wid-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #c05551;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.wid-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.1;
+}
+
+.wid-underline {
+  width: 50px;
+  height: 3px;
+  background: #c05551;
+  margin: 0 auto 18px;
+  border-radius: 2px;
+}
+
+.wid-subtitle {
+  font-size: 15px;
+  color: #777;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Grid ── */
+.wid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ── Card ── */
+.wid-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 18px;
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+/* colour accent bar along the top */
+.wid-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent, #c05551);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+  border-radius: 18px 18px 0 0;
+}
+
+/* glowing background bloom on hover */
+.wid-card::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--accent, #c05551);
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  transform: scale(0.6);
+  filter: blur(40px);
+}
+
+.wid-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.09);
+  border-color: transparent;
+}
+
+.wid-card:hover::before {
+  transform: scaleX(1);
+}
+
+.wid-card:hover::after {
+  opacity: 0.12;
+  transform: scale(1);
+}
+
+/* ── Card internals ── */
+.wid-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wid-emoji {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.wid-card:hover .wid-emoji {
+  background: color-mix(in srgb, var(--accent) 10%, white);
+  transform: rotate(-4deg) scale(1.08);
+}
+
+.wid-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.wid-card-desc {
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #666;
+  margin: 0;
+  flex: 1;
+}
+
+/* ── Tags ── */
+.wid-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.wid-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  color: #555;
+  border: 1px solid #e8e8e8;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.wid-card:hover .wid-tag {
+  background: color-mix(in srgb, var(--accent) 10%, white);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 30%, white);
+}
+
+/* ── Dark Mode ── */
+.dark .wid-title    { color: #eee; }
+.dark .wid-subtitle { color: #aaa; }
+
+.dark .wid-card {
+  background: #1e1e1e;
+  border-color: #2a2a2a;
+}
+
+.dark .wid-card:hover {
+  border-color: transparent;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.dark .wid-card-title { color: #eee; }
+.dark .wid-card-desc  { color: #aaa; }
+
+.dark .wid-emoji {
+  background: #2a2a2a;
+  border-color: #333;
+}
+
+.dark .wid-tag {
+  background: #2a2a2a;
+  color: #bbb;
+  border-color: #3a3a3a;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 1024px) {
+  .wid-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wid-section {
+    padding: 60px 20px;
+  }
+  .wid-title {
+    font-size: 32px;
+  }
+  .wid-grid {
+    grid-template-columns: 1fr;
+  }
+}
