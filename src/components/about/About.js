@@ -2,10 +2,10 @@ import "./about.css";
 import Pic from "../../img/pic.jpg";
 
 const STATS = [
-  { value: "3+", label: "Years Experience" },
-  { value: "4", label: "Companies" },
-  { value: "7+", label: "Projects Shipped" },
-  { value: "10+", label: "Technologies" },
+  { value: "4+", label: "Years Experience" },
+  { value: "5", label: "Companies" },
+  { value: "8+", label: "Projects Shipped" },
+  { value: "15+", label: "Technologies" },
 ];
 
 const About = () => {
@@ -21,15 +21,16 @@ const About = () => {
         <p className="a-section-label">WHO I AM</p>
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          I'm a <strong>Backend and Fullstack Engineer</strong> with 3+ years of experience designing
-          and building scalable REST APIs, microservices, and data-driven web applications. I
-          specialise in <strong>Node.js, Express, PostgreSQL, and MongoDB</strong>, with real-world
-          exposure to cloud platforms including <strong>AWS (S3, EC2, Lambda)</strong> and Azure.
+          I'm a <strong>Software Engineer at GE Healthcare</strong> with expertise in{" "}
+          <strong>fullstack development</strong> (Node.js, Python, React, Angular) and{" "}
+          <strong>database management</strong> (MongoDB, PostgreSQL, Redis). Currently building
+          MRI Spectroscopy systems, GenAI chatbots, and Kubernetes-based microservices in a
+          healthcare tech environment.
         </p>
         <p className="a-desc">
-          I'm passionate about clean architecture, performance optimisation, and turning complex
-          business requirements into elegant, maintainable solutions. From Fintech SaaS platforms to
-          social networks, I enjoy the full journey — from schema design to deployment.
+          Adept at building scalable microservices, integrating AI/LLM solutions (LangChain, RAG,
+          FAISS), and optimising system performance to drive business growth. From schema design
+          to Kubernetes deployments, I enjoy owning the full engineering lifecycle.
         </p>
 
         <div className="a-stats">

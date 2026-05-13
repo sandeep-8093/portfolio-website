@@ -12,22 +12,22 @@ const skillCategories = [
   {
     icon: <FaCode />,
     label: "Languages",
-    items: ["JavaScript", "Python", "C++", "SQL", "TypeScript"],
+    items: ["JavaScript", "TypeScript", "Python", "C/C++", "SQL"],
   },
   {
     icon: <FaLayerGroup />,
     label: "Frameworks",
-    items: ["Node.js", "Express.js", "NestJS", "Flask", "React.js", "Angular"],
+    items: ["Node.js", "Express.js", "Flask", "React.js", "Angular", "Mongoose"],
   },
   {
     icon: <FaDatabase />,
-    label: "Databases",
-    items: ["PostgreSQL", "MongoDB", "MySQL", "AWS Redshift", "Azure SQL", "ElasticSearch"],
+    label: "Database Systems",
+    items: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "AWS Redshift", "Azure SQL", "ElasticSearch"],
   },
   {
     icon: <FaTools />,
     label: "Tools & Cloud",
-    items: ["AWS (S3, EC2, Lambda)", "Azure", "Docker", "Git/GitHub", "Postman", "Jira", "Netlify"],
+    items: ["AWS", "Azure", "Docker", "Kubernetes", "RabbitMQ", "Git", "Linux", "Cypress"],
   },
 ];
 

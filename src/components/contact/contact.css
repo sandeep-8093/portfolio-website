@@ -91,6 +91,16 @@
   opacity: 0.8;
 }
 
+.c-icon-emoji {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Right panel — form */
 .c-desc {
   font-size: 14px;

@@ -125,6 +125,12 @@
   letter-spacing: 0.3px;
 }
 
+.exp-location {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
 /* Duties */
 .exp-duties {
   list-style: none;

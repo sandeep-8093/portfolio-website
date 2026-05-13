@@ -43,6 +43,9 @@ const Experience = () => {
             >
               @ {active.company} ↗
             </a>
+            {active.location && (
+              <p className="exp-location">📍 {active.location}</p>
+            )}
             <p className="exp-dates">{active.dates}</p>
           </div>
           <ul className="exp-duties">

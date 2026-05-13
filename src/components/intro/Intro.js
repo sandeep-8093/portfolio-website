@@ -2,11 +2,11 @@ import "./intro.css";
 import Me from "../../img/me.png";
 
 const TITLES = [
+  "Software Engineer @ GE Healthcare",
   "Fullstack Developer",
   "Backend Engineer",
-  "Node.js & Express",
-  "API Architect",
-  "Cloud & DevOps",
+  "GenAI & LLM Integrations",
+  "Kubernetes & Microservices",
 ];
 
 const Intro = () => {
@@ -24,9 +24,9 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-            Backend &amp; Fullstack Engineer with 3+ years building scalable REST APIs,
-            microservices, and data-driven web apps using Node.js, Express, PostgreSQL, MongoDB,
-            and cloud services (AWS, Azure).
+            Innovative Software Engineer with expertise in fullstack development (Node.js, Python,
+            React, Angular) and database management (MongoDB, PostgreSQL). Adept at building
+            scalable microservices, integrating AI/LLM solutions, and optimising system performance.
           </p>
           <div className="i-cta-group">
             <a
@@ -55,9 +55,9 @@ const Intro = () => {
         <img src={Me} alt="Sandeep Kumar Nayak" className="i-img" />
         <div className="i-badges">
           <span className="i-badge">Node.js</span>
-          <span className="i-badge">PostgreSQL</span>
-          <span className="i-badge">AWS</span>
-          <span className="i-badge">MongoDB</span>
+          <span className="i-badge">Kubernetes</span>
+          <span className="i-badge">GenAI / LLM</span>
+          <span className="i-badge">AWS · Azure</span>
         </div>
       </div>
     </div>

@@ -6,44 +6,44 @@ const EXPERTISE = [
     emoji: "⚙️",
     title: "Backend API Development",
     description:
-      "Building robust, scalable REST APIs using Node.js and Express.js with clean MVC architecture, request validation, global error handling, and rate limiting.",
-    tags: ["Node.js", "Express.js", "REST API", "NestJS"],
+      "Building robust, scalable REST APIs using Node.js, Express.js, and Flask with clean architecture, Sequelize/Mongoose ORM, request validation, and global error handling.",
+    tags: ["Node.js", "Express.js", "Flask", "Sequelize", "Mongoose"],
     accent: "#c05551",
   },
   {
     id: 2,
-    emoji: "🗄️",
-    title: "Database Architecture",
+    emoji: "🤖",
+    title: "AI / GenAI Integration",
     description:
-      "Designing relational and NoSQL schemas for production systems. Experienced with PostgreSQL joins, indexing, and migrations, plus MongoDB aggregation pipelines.",
-    tags: ["PostgreSQL", "MongoDB", "MySQL", "ElasticSearch"],
-    accent: "#2caeba",
+      "Integrating LLM-powered solutions with LangChain, RAG pipelines, and FAISS vector stores to build intelligent chatbots and data-query tools over enterprise datasets.",
+    tags: ["LangChain", "RAG", "FAISS", "LLM", "Python"],
+    accent: "#7c3aed",
   },
   {
     id: 3,
     emoji: "☁️",
     title: "Cloud & DevOps",
     description:
-      "Deploying and managing services on AWS (S3, EC2, Lambda) and Azure. Containerising workloads with Docker and managing environment configs for CI/CD pipelines.",
-    tags: ["AWS", "Azure", "Docker", "Render"],
+      "Deploying and managing containerised services on AWS and Azure, orchestrating microservices with Kubernetes and Helm, and using RabbitMQ for fault-tolerant message queuing.",
+    tags: ["AWS", "Azure", "Docker", "Kubernetes", "RabbitMQ"],
     accent: "#f0a500",
   },
   {
     id: 4,
-    emoji: "🔒",
-    title: "Auth & Security",
+    emoji: "🗄️",
+    title: "Database Architecture",
     description:
-      "Implementing JWT-based authentication, OAuth integrations, bcrypt password hashing, Helmet middleware, and role-based access control for secure APIs.",
-    tags: ["JWT", "OAuth", "bcrypt", "Helmet"],
-    accent: "#6c63ff",
+      "Designing relational and NoSQL schemas for production systems — PostgreSQL with complex joins and indexing, MongoDB aggregation pipelines, Redis caching, and ElasticSearch for search.",
+    tags: ["PostgreSQL", "MongoDB", "Redis", "ElasticSearch", "Azure SQL"],
+    accent: "#2caeba",
   },
   {
     id: 5,
     emoji: "🏗️",
-    title: "System Design",
+    title: "Microservices & System Design",
     description:
-      "Architecting microservices from monoliths, designing event-driven workflows, and applying SOLID principles to build systems that scale cleanly under load.",
-    tags: ["Microservices", "MVC", "SOLID", "Flask"],
+      "Architecting and maintaining PaaS microservices, refactoring legacy monoliths into modular components, and applying SOLID principles to build systems that scale and stay maintainable.",
+    tags: ["Microservices", "PaaS", "SOLID", "MVC", "Helm"],
     accent: "#28a745",
   },
   {
@@ -51,8 +51,8 @@ const EXPERTISE = [
     emoji: "🖥️",
     title: "Fullstack Development",
     description:
-      "Bridging backend APIs with modern frontends using React and Angular. Experienced in state management (Redux, NgRx), component-driven design, and SPA routing.",
-    tags: ["React", "Angular", "Redux", "NgRx"],
+      "Bridging backend APIs with modern frontends using React and Angular. Experienced in NgRx/Redux state management, TypeScript, component-driven design, and end-to-end testing with Cypress.",
+    tags: ["React", "Angular", "TypeScript", "NgRx", "Cypress"],
     accent: "#e83e8c",
   },
 ];
@@ -65,7 +65,7 @@ const WhatIDo = () => {
         <h2 className="wid-title">What I Do</h2>
         <div className="wid-underline"></div>
         <p className="wid-subtitle">
-          From schema design to cloud deployment — here's where I bring value.
+          From schema design to Kubernetes deployments and GenAI chatbots — here's where I bring value.
         </p>
       </div>
 

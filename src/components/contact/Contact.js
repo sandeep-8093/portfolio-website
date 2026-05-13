@@ -10,6 +10,13 @@ import { ThemeContext } from "../../context";
 
 const CONTACT_ITEMS = [
   {
+    icon: null,
+    emoji: "📞",
+    label: "Phone",
+    text: "+91 98532 73147",
+    href: "tel:+919853273147",
+  },
+  {
     icon: Email,
     label: "Email",
     text: "nayaksandeep676@gmail.com",
@@ -18,7 +25,7 @@ const CONTACT_ITEMS = [
   {
     icon: Address,
     label: "Location",
-    text: "Bhubaneswar, Odisha, India",
+    text: "Bangalore, Karnataka, India",
     href: null,
   },
   {
@@ -76,9 +83,12 @@ const Contact = () => {
             Open to Backend, Fullstack, and SDE opportunities. Feel free to reach out!
           </p>
           <div className="c-info">
-            {CONTACT_ITEMS.map(({ icon, label, text, href }) => (
+            {CONTACT_ITEMS.map(({ icon, emoji, label, text, href }) => (
               <div key={label} className="c-info-item">
-                <img src={icon} alt={label} className="c-icon" />
+                {icon
+                  ? <img src={icon} alt={label} className="c-icon" />
+                  : <span className="c-icon-emoji">{emoji}</span>
+                }
                 {href ? (
                   <a href={href} target="_blank" rel="noreferrer">{text}</a>
                 ) : (
