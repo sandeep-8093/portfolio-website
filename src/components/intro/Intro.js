@@ -53,12 +53,6 @@ const Intro = () => {
       <div className="i-right">
         <div className="i-bg"></div>
         <img src={Me} alt="Sandeep Kumar Nayak" className="i-img" />
-        <div className="i-badges">
-          <span className="i-badge">Node.js</span>
-          <span className="i-badge">Kubernetes</span>
-          <span className="i-badge">GenAI / LLM</span>
-          <span className="i-badge">AWS · Azure</span>
-        </div>
       </div>
     </div>
   );

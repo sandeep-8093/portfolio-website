@@ -175,6 +175,11 @@
     border-left: none;
     border-bottom: 2px solid #e8e8e8;
     min-width: unset;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .exp-tabs::-webkit-scrollbar {
+    display: none;
   }
   .exp-tab {
     border-left: none;
