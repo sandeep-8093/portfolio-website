@@ -4,8 +4,8 @@ export const projects = [
     id: 1,
     title: "Stack-Up — MEAN Stack Q&A Platform",
     img: "https://i.ibb.co/2sfvNt2/screencapture-stackup-netlify-app-2022-05-06-14-17-02.png",
-    link: "https://stack-up-client.netlify.app/",
-    github: "https://github.com/sandeep8093",
+    link: "https://stackup-client.vercel.app/",
+    github: "https://github.com/sandeep-8093/stackup-client",
     description:
       "A full-stack Q&A platform using the MEAN stack (MongoDB, Express, Angular, Node.js), featuring user authentication, RESTful APIs, content interactions, and profile-based networking capabilities.",
     tech: ["Angular", "Node.js", "Express", "MongoDB", "JWT"],
@@ -15,8 +15,8 @@ export const projects = [
     id: 2,
     title: "Dress-Up — Cross-Platform eCommerce",
     img: "https://i.ibb.co/vm9bzQK/screencapture-cheerful-kleicha-df2c43-netlify-app-2022-07-31-23-26-27.png",
-    link: "https://dress-up-main.netlify.app/",
-    github: "https://github.com/sandeep8093",
+    link: "https://dressup-client.vercel.app/",
+    github: "https://github.com/sandeep-8093/dressup-client",
     description:
       "A cross-platform eCommerce app for fashion products supporting multiple categories, seamless UX, RESTful APIs, an Admin Panel for CRUD operations, and Stripe for secure payment processing.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
@@ -26,8 +26,8 @@ export const projects = [
     id: 3,
     title: "Pastebin Clone — Code Snippet Sharing",
     img: "https://i.ibb.co/Wf5BLPD/screencapture-pastebin-client-netlify-app-2023-12-10-13-35-48.png",
-    link: "https://pastebin-client.netlify.app/",
-    github: "https://github.com/sandeep8093",
+    link: "https://pastebin-client-one.vercel.app/",
+    github: "https://github.com/sandeep-8093/pastebin-client",
     description:
       "A code snippet sharing tool with syntax highlighting, expiry settings, and public/private access control. Built with React and a Node.js/Express REST API.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
