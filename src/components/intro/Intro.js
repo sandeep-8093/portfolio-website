@@ -40,7 +40,7 @@ const Intro = () => {
               View Projects
             </a>
             <a
-              href="https://drive.google.com/file/d/1gjIcVdkth_4beID5Mb9K5fU5aUVjRn48/view?usp=sharing"
+              href="https://drive.google.com/file/d/1anWBbHFDD2lXgJcFJBq1YugxqrkYO17q/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="i-cta secondary"

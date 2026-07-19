@@ -44,7 +44,7 @@ const CONTACT_ITEMS = [
     icon: Resume,
     label: "Resume",
     text: "Download my CV",
-    href: "https://drive.google.com/file/d/1gjIcVdkth_4beID5Mb9K5fU5aUVjRn48/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1anWBbHFDD2lXgJcFJBq1YugxqrkYO17q/view?usp=sharing",
   },
 ];
 
